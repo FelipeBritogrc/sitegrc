@@ -9,8 +9,8 @@ const APPS = [
     iconRing: "ring-[#2545B8]/30",
     iconSize: 92,
     description: "Cashback e benefícios exclusivos em todas as suas compras",
-    playStore: "https://play.google.com/store/apps/details?id=br.com.redecompras.rcplus",
-    appStore: "#",
+    playStore: "https://play.google.com/store/apps/details?id=br.com.redecomprasdelivery.appvendas&hl=pt_BR",
+    appStore: "https://apps.apple.com/us/app/super-app-redecompras/id1553479594",
     learnMore: "/clube/rc-plus"
   },
   {
@@ -20,8 +20,8 @@ const APPS = [
     iconRing: "ring-yellow-400/30",
     iconSize: 100,
     description: "Descontos especiais e promoções exclusivas para nossos clientes",
-    playStore: "https://play.google.com/store",
-    appStore: "#",
+    playStore: "https://play.google.com/store/search?q=cliente%20arretado%20bomqueso&c=apps&hl=pt_BR",
+    appStore: "https://apps.apple.com/br/app/cliente-arretado-bomques%C3%B3/id6480092828",
     learnMore: "/clube/cliente-arretado"
   }
 ];

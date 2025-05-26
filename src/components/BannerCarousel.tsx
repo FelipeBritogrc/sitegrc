@@ -1,37 +1,42 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import banner1 from "../assets/images/BANNER1.jpg"
+import corrida from "../assets/images/corrida.png"
+import cluberc from "../assets/images/Banner ClubeRC .png"
+import ecommerce from "../assets/images/BANNERT.jpg"
+import lojas from "../assets/images/banner2.jpg"
 
 // Banners do carrossel
 const HERO_BANNERS = [
   {
-    img: "/banner1",
+    img: banner1,
     title: "Bem-vindo ao Grupo RedeCompras",
     description: "Unindo tradição e inovação para atender você cada vez melhor.",
-    align: "center",
+    align: "left",
   },
   {
-    img: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=2300&q=80",
-    title: "BomQuéSó: Economia e Qualidade",
+    img: lojas,
+    title: "Economia e Qualidade",
     description: "Conheça nossa linha de atacarejo e aproveite ofertas imbatíveis.",
     align: "left",
   },
   {
-    img: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=2300&q=80",
+    img: ecommerce,
     title: "RedeCompras.com",
     description: "Facilidade, confiança e entrega rápida no nosso e-commerce.",
     align: "right",
   },
   {
-    img: "https://images.unsplash.com/photo-1627137220795-a9e74dc36875?auto=format&fit=crop&w=2300&q=80",
+    img: cluberc,
     title: "Ofertas que surpreendem!",
     description: "Só este mês, super descontos em toda loja física.",
     align: "left",
   },
   {
-    img: "https://images.unsplash.com/photo-1556742400-b5dd9641e278?auto=format&fit=crop&w=2300&q=80",
-    title: "Conheça nosso parceiro!",
-    description: "",
+    img: corrida,
+    title: " ",
+    description: " ",
     align: "right",
     externalUrl: "https://parceiro.com"
   }
@@ -111,7 +116,7 @@ const BannerCarousel: React.FC = () => {
               src={banner.img}
               alt={banner.title}
               className={`
-                w-full h-full min-h-[260px] max-h-[580px] object-cover object-center brightness-[.8] transition-all duration-700
+                w-full h-full min-h-[260px] max-h-[580px] object-fill object-center brightness-[.8] transition-all duration-700
                 ${i === current ? "scale-100" : "scale-105 blur-[1px]"}
               `}
               draggable={false}
@@ -139,7 +144,7 @@ const BannerCarousel: React.FC = () => {
                   {banner.description}
                 </p>
               )}
-              {banner.externalUrl && (
+              {/* {banner.externalUrl && (
                 <a
                   href={banner.externalUrl}
                   target="_blank"
@@ -147,12 +152,13 @@ const BannerCarousel: React.FC = () => {
                   className="inline-flex gap-2 mt-3 sm:mt-5 items-center px-6 py-2.5 rounded-xl bg-[#0d7c3d]/95 hover:bg-[#282e76]/90 text-white text-lg md:text-xl font-bold shadow-xl border-2 border-[#282e76] transition-colors duration-200"
                   style={{
                     width: "fit-content",
+                    
                   }}
                 >
-                  <span>Conheça nosso parceiro</span>
+                  <span>faça sua inscrição</span>
                   <ExternalLink size={22} />
                 </a>
-              )}
+              )} */}
             </div>
           </div>
         ))}
